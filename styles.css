@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-image: linear-gradient( 115deg, rgba(204, 110, 42, 0.8), #09d14cb3 ), url(https://i.ibb.co/9NwYj67/abstract-219915.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color:rgba(165, 6, 6, 0.856)
+}
+.container{
+    max-width: 400px;
+    margin: 15px auto ;
+
+}
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+form {
+    width: 65vw;
+    max-width: 600px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color:rgb(244, 244, 162);
+    border-radius: 10px;
+}
+#title{
+    margin: 1.1em auto;
+    width: 30vw;
+    font-weight: 900;
+    text-align: center;
+    border-bottom: 3px solid #0ad8df;
+    box-shadow: 5px 60px 20px 40px hsla(173, 57%, 48%, 0.400);
+    border-radius: 50%;
+    color:rgba(47, 45, 45, 0.856)
+
+}
+#description{
+    text-align: center;
+    margin: 1em auto;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.3em;
+    color:rgba(47, 45, 45, 0.856)
+
+}
+fieldset {
+    border: none;
+    padding: 1.5rem 0;
+    border-bottom: 5px double #3869db;
+    
+}
+fieldset:last-of-type {
+    border-bottom: none;
+}
+label{
+    display: block;
+    margin: 1rem 20px;
+    color: black;
+}
+h4{
+    display: block;
+    margin: 45px 20px 10px 20px;
+    color:black;
+}
+input,
+textarea{
+    margin: 10px auto;
+    width: 100%;
+    background-color:black;
+    color:rgb(244, 244, 244);
+    border-radius:3px
+}
+.inline {
+    width: unset;
+    vertical-align: middle;
+}
+#submit{
+    display: block;
+    width: 50%;
+    margin: 1.5em auto;
+    height: 4em;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: hsla(173, 57%, 48%, 0.400);
+    border-color: rgb(221, 253, 10);
+    border-radius:13px;
+    min-width: 250px; 
+    color:black
+}  
+
+
+

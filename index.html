@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+           
+        <h1 id="title" class="text-anim">Survey Form</h1>
+        <p id="description">Simple form to fill out, please spend 2 minutes</p>
+        
+        <form id="survey-form" action="post">
+            <fieldset>
+                <div class="container">
+                    <label id="name-label" for="name" title="Write name"> Enter you name: 
+                        <input id="name" type="text" placeholder="First Name..." required>
+                    </label>
+                    <label id="email-label" for="email" title="Write email">Enter you email: 
+                        <input id="email" type="email" required placeholder="email@dog.com"> 
+                    </label>
+                    <label id="number-label" for="number" title="Enter age">Enter you age: 
+                        <input id="number" type="number" min="18" max="60" required placeholder=">18 & <60"> 
+                    </label>
+                </div>
+            </fieldset>
+
+            <!-- choice -->
+            <fieldset>
+                <div class="container">
+                    <label for="dropdown" class="dropdown"> This is your choice of car brand 
+                        <select name="select-dropdown" id="dropdown">
+                            <option value="">(--any)</option>
+                            <option value="1">Audi</option>
+                            <option value="2">BMW</option>
+                            <option value="3">Mercedes</option>
+                            <option value="4">Volvo</option>
+                            <option value="5">Jeep</option>
+                            <option value="6">--other--</option>
+                        </select>
+                    </label>
+                    <h4>Choice of engine type</h4>
+
+                    <label class="inline" for="petrol-car"> 
+                        <input type="radio" id="petrol-car" name="engine-type" value="petrol" class="inline"> Petrol car 
+                    </label>
+                    <label class="inline" for="diesel-car">
+                        <input type="radio" id="diesel-car" name="engine-type" value="diesel" class="inline"> Diesel car
+                    </label>
+                    <label class="inline" for="electro-car">
+                        <input type="radio" id="electro-car" name="engine-type" value="electro" class="inline"> Electro car
+                    </label>
+                </div>
+                <div class="container">
+                    <h4>Choice of body car</h4>
+                    <label class="inline" for="hatchback"> 
+                        <input type="radio" id="hatchback" name="body-car" value="hatchback" class="inline"> Hatchback 
+                    </label>
+                    <label class="inline" for="sedan">
+                        <input type="radio" id="sedan" name="body-car" value="sedan" class="inline"> Sedan
+                    </label>
+                    <label class="inline" for="electro car">
+                        <input type="radio" id="electro car" name="body-car" value="electro" class="inline"> Van
+                    </label>
+                   
+                </div>
+            </fieldset>
+            
+            <fieldset>
+               <div class="container">
+                <h4>Additional options</h4>
+
+                <label for="led"> 
+                    <input id="led" type="checkbox" value="led" class="inline"> LED headlights  
+                </label>
+                <label for="leather"> 
+                    <input id="leather" type="checkbox" value="leather" class="inline"> Leather interior  
+                </label>
+                <label for="abs"> 
+                    <input id="abs" type="checkbox" value="abs" class="inline"> ABS  
+                </label>
+                <label for="climate"> 
+                    <input id="climate" type="checkbox" value="climate" class="inline"> Climate control  
+                </label>
+                <label for="automatic"> 
+                    <input id="automatic" type="checkbox" value="automatic" class="inline"> Insurance 
+                </label>
+                <label for="robot"> 
+                    <input id="robot" type="checkbox" value="robot" class="inline"> AKP robot  
+                </label>
+                <label for="armored"> 
+                    <input id="armored" type="checkbox" value="armored" class="inline"> Armored body  
+                </label>
+               </div>
+            </fieldset>
+            <!--coments and submit  -->
+            <fieldset>
+                <div class="container">
+                    <label for="coment">This area for you coment->   
+                        <textarea id="coment" name="coment" rows="5" cols="30" placeholder="write what's on your mind..."></textarea>
+                    </label>
+                </div>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+
+        </form>
+    
+</body>
+</html>
